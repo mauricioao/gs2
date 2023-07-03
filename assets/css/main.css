@@ -3843,7 +3843,7 @@ button,
 
 @media (max-width: 360px) {
   .nav-bottom {
-    width: 320px;
+    width: 420px;
   }
 }
 
@@ -3884,6 +3884,7 @@ button,
 }
 
 .popup-whatsapp {
+  font-size: 12px;
   display: none;
   position: absolute;
   flex-direction: column;
@@ -3893,7 +3894,7 @@ button,
   height: auto;
   padding: 10px;
   bottom: 85px;
-  right: 6px;
+  right: 20px;
   transition: .5s;
   border-radius: 10px;
   background-color: white;
@@ -3905,7 +3906,7 @@ button,
 }
 
 .popup-whatsapp>div {
-  margin: 5px;
+  margin: 10px;
 }
 
 @media (max-width: 680px) {
@@ -3916,7 +3917,9 @@ button,
 
 .popup-whatsapp>.content-whatsapp.-top {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  min-width: 295px;
+  justify-content: space-between;
 }
 
 .popup-whatsapp>.content-whatsapp.-top p {
@@ -3929,6 +3932,7 @@ button,
 .popup-whatsapp>.content-whatsapp.-bottom {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .closePopup {

@@ -589,7 +589,8 @@ popupWhatsApp = () => {
 	let btnClosePopup = document.querySelector('.closePopup');
 	let btnOpenPopup = document.querySelector('.whatsapp-button');
 	let popup = document.querySelector('.popup-whatsapp');
-	let sendBtn = document.getElementById('send-btn');
+	let sendBtn1 = document.getElementById('send-btn-1');
+	let sendBtn2 = document.getElementById('send-btn-2');
   
 	btnClosePopup.addEventListener("click",  () => {
 	  popup.classList.toggle('is-active-whatsapp-popup')
@@ -600,11 +601,18 @@ popupWhatsApp = () => {
 	   popup.style.animation = "fadeIn .6s 0.0s both";
 	})
 	
-	sendBtn.addEventListener("click", () => {
-	let msg = document.getElementById('whats-in').value;
+	sendBtn1.addEventListener("click", () => {
+	let msg = document.getElementById('whats-in-1').value;
 	let relmsg = msg.replace(/ /g,"%20");
 	   
-	 window.open('https://wa.me/521557153381?text='+relmsg, '_blank'); 
+	 window.open('https://wa.me/+51924204083?text='+relmsg, '_blank'); 
+	
+	});
+	sendBtn2.addEventListener("click", () => {
+	let msg = document.getElementById('whats-in-2').value;
+	let relmsg = msg.replace(/ /g,"%20");
+	   
+	 window.open('https://wa.me/+51971260729?text='+relmsg, '_blank'); 
 	
 	});
   
